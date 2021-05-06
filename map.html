@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>K67BIO</title>
+    
+    <!-- 사용자 css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mobile.css" media="screen and (max-width : 767px)" >
+
+    <!-- 웹폰트 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- 사용자 자바스크립트 -->
+    <script src="./js/index.js"></script>
+    <!--다음 지도-->
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</head>
+
+
+<body>
+    <header id="main_header">
+        <!-- 메뉴버튼 -->
+         <button class="btn_toggle">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </button>
+
+        <!-- 로고 -->
+        <h1>
+            <a href="./">
+            <img src="./image/logo.png" alt="k67bio">
+            </a>
+        </h1>
+        <a class="mall" href="https://smartstore.naver.com/totalcosmetics" class="btn_right">자사몰</a>
+
+        <!-- GNB -->
+        <div id="mySidenav" class="sidenav"> 
+            <a style="font-size:30px;cursor:pointer"href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="/company.html">Company</a></li>
+                <li><a href="/brand.html">Brand</a></li>
+                <li><a class="blue" href="/map.html">오시는 길</a></li>
+                <li><a href="/business.html">Business</a></li>
+                <li><a href="/product.html">제품개발</a></li>
+                <li><a href="/r&d.html">R&amp;D</a></li>
+                <li><a href="#">Notice</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            </div>
+    </header>
+    
+        <!-- 오시는길 -->
+      <div id="main">
+        <section>
+            <h1 class="title">오시는 길</h1><br>
+        
+            <!-- 1. 지도 노드 -->
+            <div id="daumRoughmapContainer1619359251249" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp" : "1619359251249",
+                    "key" : "25hvi",
+                    "mapWidth" : "100%",
+                    "mapHeight" : "360"
+                }).render();
+            </script>
+            
+            <div class="info">
+                <img src="./image/map_info.png" alt="info">
+            </div>
+         </section>
+       </div>
+
+    <!-- footer -->
+    <footer id="main_footer">
+        <p><strong>법인명</strong> (주)케이67바이오</p>
+        <p><strong>대표자</strong> 고은미</p>
+        <p><strong>사업자등록번호</strong> 654-86-00854</p>
+        <p class="tel"><strong>대표전화</strong>
+        <a href="TEL.053.816.5595">053.816.5595</a></p>
+        <p><strong>주소</strong> 경북 경산시 어봉지길 285-10, 미래관 306호</p>
+        <small class="copy">CopyrightⓒK67BIO, All Rights Reserved.</small>
+        <div class="sns">
+            <a href="#"><img src="./image/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="./image/instagram.png" alt="instagram"></a>
+            <a href="https://smartstore.naver.com/totalcosmetics"><img src="./image/naver.png" alt="naverstore"></a>
+        </div>
+    </footer>
+</body>
+</html>

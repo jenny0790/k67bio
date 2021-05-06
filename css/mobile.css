@@ -1,0 +1,397 @@
+/* mobile.css */
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* 초기화 */
+*{
+    margin : 0 auto;
+    padding  : 0 auto;
+    box-sizing : border-box;
+}
+
+ul{
+    list-style-type : none;
+    padding : 0;
+}
+
+a{
+    text-decoration : none;
+    color  :  #333;
+}
+
+body{
+    color : #333;
+    font-family : 'Noto Sans KR', sans-serif;
+    font-size  : 12px;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+#main_header{
+    position : relative;
+    background : #fff;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+#main_header > h1{
+    padding-top : 10px;
+    text-align : center;
+}
+
+#main_header  > h1 img {
+    width: 40px;
+}
+
+.mall {
+    line-height: 27px;
+    width : 80px;
+    height: 30px;
+    background : #1ca0d9;
+    color : #fff;
+    position : absolute;
+    top : 18px;
+    right : 20px;
+}
+
+.mall:hover, .mall:active {
+    color : #333;
+    font-weight: bold;
+    background : #1ca0d9;
+}
+
+#main_header .btn_right {
+    position : absolute;
+    right : 20px;
+    top : 20px;
+    width : 80px;
+    height: 30px;
+    background : #1ca0d9;
+    color :#fff;
+    line-height: 30px;
+}
+
+#main_header > .btn_toggle{
+    position : absolute;
+    left: 20px;
+    top: 10px;
+    background : none;
+    border : none;
+    color : #1ca0d9;
+}
+    
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #1CA0D9;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin-left: 50px;
+}
+
+#mySidenav a {
+    text-align : left;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-bottom : 15px;
+    font-size: 14px;
+}
+
+li >.blue{
+    color : #1ca0d9;
+}
+
+#gnb > ul > li a:hover {
+    color : #1ca0d9;
+    font-weight: bold;
+}
+
+#main_footer{
+    background : #eee;
+    color : #333;
+    padding : 15px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+#main_footer .sns img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-left : 5px;
+    margin-top : 10px;
+}
+
+#main_footer .sns {
+    text-align: right;
+}
+
+.title{
+    line-height: 50px;
+    height: 50px;
+    color: #fff;
+    background-color : #1ca0d9;
+}
+
+/*index.html*/
+#main_visual > .slider >img {
+    width: 100%;
+    height: 350px;
+    display : block;
+}
+
+.slider{
+    width : 100%;
+    padding-top : 350px;
+    position : relative;
+}
+
+.slider > img {
+    position : absolute;
+    left : 0; top : 0;
+    opacity : 0;
+    transition-duration : 1s;
+}
+
+.slider  > img.show{
+    opacity :  1;
+}
+
+#main_contents{
+    background: #1ca0d9;
+    color  : #fff;
+    padding : 20px;
+    font-size : 14px;
+}
+
+#business_info h2 {
+    padding-top : 50px;
+    color : #1ca0d9;
+}
+
+#business_info ul li{
+    display : inline-block;
+    margin-top : 10px;
+    padding :8px 20px;
+    border : 1px solid #333;
+}
+
+#business_info ul a:hover{
+    color : #1ca0d9;
+    font-weight: bold;
+}
+
+#business_info img {
+    width : 100%;
+    height: 300px;
+    padding-top : 10px;
+    padding-bottom: 40px;
+}
+
+#main_contact h2 {
+    padding-bottom: 5px;
+    padding-top : 20px;
+    color : #1ca0d9;
+}
+#main_contact p {
+    padding-bottom : 10px;
+}
+#main_contact img {
+    width : 100%;
+    
+}
+.contact_btn {
+    margin-top : 10px;
+    margin-bottom : 20px;
+    background : #fff;
+    border : 1px solid #333;
+    padding : 7px 20px;
+}
+
+.contact_btn a:hover{
+    color : #1ca0d9;
+}
+
+/*map*/
+#daumRoughmapContainer1619359251249{
+    margin : 0 auto;
+    width : 100%;
+    padding-bottom : 50px;
+    padding-top : 20px;
+}
+
+.info {
+    padding-bottom : 50px;
+}
+
+.info img {
+    padding-left : 30px;
+    width : 100%;
+}
+
+
+/*company*/
+#company {
+    position : relative;
+}
+
+
+#company .info img{
+    width : 100%;
+    padding-right : 30px;
+    padding-top : 50px;
+    
+}
+
+#intro .co_name {
+    text-align : right;
+}
+
+/*brand story*/
+#brand_story img{
+    padding-top : 50px;
+    width : 100%;
+    padding-bottom : 30px;
+}
+
+#brand_story .padding {
+    margin-left : 20px;
+    margin-right: 20px;
+    width : 90%;
+}
+
+
+
+/*product*/
+#business .list   {
+    text-align : left;
+    line-height: 1.6;
+    padding : 30px;
+} 
+
+#business h3 {
+    font-size: 20px;
+    color : #1ca0d9;
+}
+
+#business h4{
+    font-weight: bold;
+    font-size : 16px;
+    color : #1ca0d9;
+    padding-top : 30px;
+}
+
+/*business*/
+
+.randd {
+    position : relative;
+    margin : 30px;
+    margin-top : 50px;
+}
+
+.randd ul {
+    position : absolute;
+    text-align: center;
+    display: flex;
+    margin-left : 10%;
+    margin-right: 10%;
+}
+
+.randd ul li {
+    display: inline-block;
+    padding : 10px 30px;
+    border : 1px solid #333;
+    text-align: center;
+    margin-left : 50px;
+    margin-right: 50px;
+}
+
+.odmoem img {
+    margin-top : 50px;
+    padding-left : 30px;
+    padding-right: 30px;
+}
+
+/* R&D*/
+#laboratory img {
+    width : 90%;
+    padding-top : 50px;
+    padding-bottom : 50px;
+    
+}
+
+#laboratory h3 {
+    font-size: 20px;
+    color : #1ca0d9;
+    padding-top : 50px;
+    padding-bottom : 10px;
+}
+
+#laboratory .size {
+    width : 50%;
+    padding-top : 20px;
+}
+
+
+
+
+/* contact*/
+.form-group{
+margin-bottom : 30px;
+}
+
+.contact_text {
+    padding-top : 30px;
+    padding-bottom : 30px;
+}
+.form-group input,
+.form-group textarea {
+  width: 70%;
+  display: block;
+  padding : 15px;
+  border : 1px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.btn-detail {
+  margin-top : 10px;
+  margin-bottom : 30px;
+  width : 80px;
+    height: 30px;
+    background : #91AC4E;
+    color : #fff;
+    border : none;
+}
+
+.btn-detail a:hover {
+    color : #91AC4E;
+    background : #333;
+}
